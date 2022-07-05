@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const http = require("http");
 const path = require("path");
+// const db = require("./plugin/mysql");
 const fs = require("fs");
 
 // 앱 초기화
