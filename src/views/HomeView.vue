@@ -14,6 +14,12 @@
       <v-btn @click="barTest2">Finish</v-btn>
       <v-btn @click="barTest3">Fail</v-btn>
     </div>
+    <h1>Notify 테스트</h1>
+    <div>
+      <v-btn @click="notifyTest1">Alert</v-btn>
+      <v-btn @click="notifyTest2">Confirm</v-btn>
+      <v-btn @click="notifyTest3">Prompt</v-btn>
+    </div>
   </div>
 </template>
 
@@ -44,6 +50,26 @@ export default {
     },
     barTest3() {
       this.$Progress.fail();
+    },
+    async notifyTest1() {
+      const res = await this.$ezNotify.alert("테스트 내용입니다.", "안내", {
+        icon: "mdi-video-4k-box",
+      });
+      console.log(res);
+    },
+    async notifyTest2() {
+      const res = await this.$ezNotify.confirm("테스트 내용입니다.");
+      console.log(res);
+    },
+    async notifyTest3() {
+      const res = await this.$ezNotify.prompt(
+        "테스트 내용입니다.",
+        "프롬프트",
+        {
+          width: 200,
+        }
+      );
+      console.log(res);
     },
   },
 };
