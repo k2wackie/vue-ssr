@@ -1,4 +1,6 @@
 import { createApp } from "./main";
+import "./plugins-client/vue-toast";
+import "./plugins-client/vue.progressbar";
 
 const { app, router, store } = createApp();
 
