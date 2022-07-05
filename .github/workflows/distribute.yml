@@ -2,7 +2,7 @@ name: SERVER distribute
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   build:
