@@ -1,7 +1,7 @@
 {
   "publicPath": "/",
   "all": [
-    "js/vendor.b6019e41.js",
+    "js/vendor.2da4b5c7.js",
     "fonts/materialdesignicons-webfont.5d875350.eot",
     "fonts/materialdesignicons-webfont.21f691f0.ttf",
     "css/vendor.8c9a3786.css",
@@ -31,21 +31,25 @@
     "fonts/Roboto-Regular.475ba9e4.woff2",
     "fonts/Roboto-Light.0e01b6cd.woff2",
     "fonts/Roboto-Thin.f7a95c9c.woff2",
-    "js/main.3ee2ac39.js",
-    "js/manifest.4c0772ab.js",
+    "js/main.ad327cbe.js",
+    "js/manifest.a89bfc8a.js",
     "favicon.ico",
     "js/about.325a72b5.js",
-    "js/error.e0f3dc98.js"
+    "js/error.e0f3dc98.js",
+    "js/login.d255c934.js",
+    "js/join.67b33366.js"
   ],
   "initial": [
-    "js/manifest.4c0772ab.js",
+    "js/manifest.a89bfc8a.js",
     "css/vendor.8c9a3786.css",
-    "js/vendor.b6019e41.js",
-    "js/main.3ee2ac39.js"
+    "js/vendor.2da4b5c7.js",
+    "js/main.ad327cbe.js"
   ],
   "async": [
     "js/about.325a72b5.js",
-    "js/error.e0f3dc98.js"
+    "js/error.e0f3dc98.js",
+    "js/login.d255c934.js",
+    "js/join.67b33366.js"
   ],
   "modules": {
     "11993876": [
@@ -151,12 +155,6 @@
       3,
       0
     ],
-    "ec3fc2ea": [
-      33
-    ],
-    "14514b7e": [
-      34
-    ],
     "38a3d934": [
       3,
       0
@@ -220,6 +218,18 @@
     "86e3c348": [
       3,
       0
+    ],
+    "ec3fc2ea": [
+      33
+    ],
+    "77f3d9be": [
+      35
+    ],
+    "79c0dae5": [
+      36
+    ],
+    "14514b7e": [
+      34
     ],
     "13f363d7": [
       3,
@@ -829,10 +839,6 @@
       3,
       0
     ],
-    "7fa1a84b": [
-      3,
-      0
-    ],
     "2b1d09d2": [
       3,
       0
@@ -1261,19 +1267,7 @@
       3,
       0
     ],
-    "9772746e": [
-      3,
-      0
-    ],
-    "9b8dc90c": [
-      3,
-      0
-    ],
-    "667e0024": [
-      3,
-      0
-    ],
-    "fe251698": [
+    "7fa1a84b": [
       3,
       0
     ],
@@ -1339,6 +1333,38 @@
     ],
     "44cdcef0": [
       30
+    ],
+    "9772746e": [
+      3,
+      0
+    ],
+    "9b8dc90c": [
+      3,
+      0
+    ],
+    "667e0024": [
+      3,
+      0
+    ],
+    "fe251698": [
+      3,
+      0
+    ],
+    "10ad26d4": [
+      3,
+      0
+    ],
+    "1f9ec584": [
+      3,
+      0
+    ],
+    "196778de": [
+      3,
+      0
+    ],
+    "0b6f6e26": [
+      3,
+      0
     ],
     "016ceefc": [
       3,
@@ -1416,19 +1442,11 @@
       3,
       0
     ],
-    "10ad26d4": [
+    "36b1cf91": [
       3,
       0
     ],
-    "1f9ec584": [
-      3,
-      0
-    ],
-    "196778de": [
-      3,
-      0
-    ],
-    "0b6f6e26": [
+    "332793d8": [
       3,
       0
     ],
@@ -1493,14 +1511,6 @@
       0
     ],
     "5bf175ae": [
-      3,
-      0
-    ],
-    "36b1cf91": [
-      3,
-      0
-    ],
-    "332793d8": [
       3,
       0
     ],
