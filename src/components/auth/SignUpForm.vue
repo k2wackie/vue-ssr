@@ -35,17 +35,24 @@
       :rules="rules.email()"
       :cbCheck="cbCheckEmail"
     />
+    <input-date
+      v-model="form.mb_birth"
+      label="생년월일(yyyy-mm-dd)"
+      prepend-icon="mdi-calendar"
+      :rules="rules.date()"
+    />
     <v-btn type="submit" block color="primary">회원가입</v-btn>
   </v-form>
 </template>
 
 <script>
 import validateRules from "../../../util/validateRules";
+import InputDate from "../InputForms/InputDate.vue";
 import InputDuplicateCheck from "../InputForms/InputDuplicateCheck.vue";
 import InputPassword from "../InputForms/InputPassword.vue";
 
 export default {
-  components: { InputDuplicateCheck, InputPassword },
+  components: { InputDuplicateCheck, InputPassword, InputDate },
   name: "SignUpForm",
   props: {
     cbCheckId: {
@@ -60,19 +67,31 @@ export default {
   data() {
     return {
       valid: true,
+      // form: {
+      //   mb_id: "",
+      //   mb_password: "",
+      //   mb_name: "",
+      //   mb_birth: "",
+      //   mb_gender: "",
+      //   mb_email: "",
+      //   mb_phone: "",
+      //   mb_zip: "",
+      //   mb_addr1: "",
+      //   mb_addr2: "",
+      // },
       form: {
-        mb_id: "",
-        mb_password: "",
-        mb_name: "",
+        mb_id: "test",
+        mb_password: "qwer1234",
+        mb_name: "테스트",
         mb_birth: "",
         mb_gender: "",
-        mb_email: "",
+        mb_email: "test@test.com",
         mb_phone: "",
         mb_zip: "",
         mb_addr1: "",
         mb_addr2: "",
       },
-      confirmPw: "",
+      confirmPw: "qwer1234",
     };
   },
   computed: {
