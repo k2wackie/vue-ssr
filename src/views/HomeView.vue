@@ -32,25 +32,25 @@ export default {
     };
   },
   title() {
-    console.log("Home.vue title mixin");
+    // console.log("Home.vue title mixin");
     return this.title;
   },
   beforeCreate() {
-    console.log("Home.vue beforeCreate");
+    // console.log("Home.vue beforeCreate");
   },
   created() {
-    console.log("Home.vue created ssrContext : ", this.$ssrContext);
+    // console.log("Home.vue created ssrContext : ", this.$ssrContext);
   },
   beforeMount() {
-    console.log("Home.vue beforeMount");
+    // console.log("Home.vue beforeMount");
   },
   mounted() {
-    console.log("Home.vue mounted");
+    // console.log("Home.vue mounted");
   },
   serverPrefetch() {
-    console.log("Home.vue serverPrefetch");
+    // console.log("Home.vue serverPrefetch");
     return new Promise((resolve, reject) => {
-      console.log("Home.vue serverPrefetch Promise");
+      // console.log("Home.vue serverPrefetch Promise");
       resolve();
     });
   },

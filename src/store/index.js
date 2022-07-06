@@ -5,7 +5,12 @@ Vue.use(Vuex);
 
 export function createStore() {
   const store = new Vuex.Store({
-    state: {},
+    state: {
+      config: {
+        title: "ezCode",
+        footer: "ezCode allright reserved.",
+      },
+    },
     mutations: {},
     actions: {},
     modules: {},
