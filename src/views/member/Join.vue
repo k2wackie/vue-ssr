@@ -5,7 +5,7 @@
         <v-toolbar-title>회원가입</v-toolbar-title>
       </v-toolbar>
       <v-card-text>
-        <sign-up-form :cb-check-id="checkId" />
+        <sign-up-form :cbCheckId="checkId" :cbCheckEmail="checkEmail" />
       </v-card-text>
     </v-card>
   </div>
@@ -22,6 +22,13 @@ export default {
     async checkId(id) {
       // console.log(id);
       const data = await this.duplicateCheck({ field: "mb_id", value: id });
+      return data;
+    },
+    async checkEmail(email) {
+      const data = await this.duplicateCheck({
+        field: "mb_email",
+        value: email,
+      });
       return data;
     },
   },
