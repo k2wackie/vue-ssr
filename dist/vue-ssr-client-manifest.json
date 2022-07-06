@@ -31,25 +31,25 @@
     "fonts/Roboto-Regular.475ba9e4.woff2",
     "fonts/Roboto-Light.0e01b6cd.woff2",
     "fonts/Roboto-Thin.f7a95c9c.woff2",
-    "js/main.ad327cbe.js",
-    "js/manifest.a89bfc8a.js",
+    "js/main.1346a1ab.js",
+    "js/manifest.fc189092.js",
+    "js/join.64ff5106.js",
     "favicon.ico",
     "js/about.325a72b5.js",
     "js/error.e0f3dc98.js",
-    "js/login.d255c934.js",
-    "js/join.67b33366.js"
+    "js/login.d255c934.js"
   ],
   "initial": [
-    "js/manifest.a89bfc8a.js",
+    "js/manifest.fc189092.js",
     "css/vendor.8c9a3786.css",
     "js/vendor.2da4b5c7.js",
-    "js/main.ad327cbe.js"
+    "js/main.1346a1ab.js"
   ],
   "async": [
+    "js/join.64ff5106.js",
     "js/about.325a72b5.js",
     "js/error.e0f3dc98.js",
-    "js/login.d255c934.js",
-    "js/join.67b33366.js"
+    "js/login.d255c934.js"
   ],
   "modules": {
     "11993876": [
@@ -220,16 +220,16 @@
       0
     ],
     "ec3fc2ea": [
-      33
+      34
     ],
     "77f3d9be": [
-      35
-    ],
-    "79c0dae5": [
       36
     ],
+    "79c0dae5": [
+      32
+    ],
     "14514b7e": [
-      34
+      35
     ],
     "13f363d7": [
       3,
