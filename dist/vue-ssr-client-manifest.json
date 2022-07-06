@@ -1,7 +1,7 @@
 {
   "publicPath": "/",
   "all": [
-    "js/vendor.4f0e1bb4.js",
+    "js/vendor.85a28ebc.js",
     "fonts/materialdesignicons-webfont.5d875350.eot",
     "fonts/materialdesignicons-webfont.21f691f0.ttf",
     "css/vendor.8c9a3786.css",
@@ -31,22 +31,22 @@
     "fonts/Roboto-Regular.475ba9e4.woff2",
     "fonts/Roboto-Light.0e01b6cd.woff2",
     "fonts/Roboto-Thin.f7a95c9c.woff2",
-    "js/main.0e086a52.js",
-    "js/manifest.4e5fc037.js",
-    "js/join.c7afe9c6.js",
+    "js/main.0ed7a22a.js",
+    "js/manifest.2bf51af2.js",
+    "js/join.dd8ab172.js",
     "favicon.ico",
     "js/about.325a72b5.js",
     "js/error.e0f3dc98.js",
     "js/login.d255c934.js"
   ],
   "initial": [
-    "js/manifest.4e5fc037.js",
+    "js/manifest.2bf51af2.js",
     "css/vendor.8c9a3786.css",
-    "js/vendor.4f0e1bb4.js",
-    "js/main.0e086a52.js"
+    "js/vendor.85a28ebc.js",
+    "js/main.0ed7a22a.js"
   ],
   "async": [
-    "js/join.c7afe9c6.js",
+    "js/join.dd8ab172.js",
     "js/about.325a72b5.js",
     "js/error.e0f3dc98.js",
     "js/login.d255c934.js"
@@ -73,6 +73,10 @@
       0
     ],
     "46727260": [
+      3,
+      0
+    ],
+    "54646190": [
       3,
       0
     ],
@@ -135,6 +139,9 @@
       3,
       0
     ],
+    "9cba2bae": [
+      30
+    ],
     "4be3ce8c": [
       3,
       0
@@ -162,6 +169,13 @@
     "273c7bda": [
       3,
       0
+    ],
+    "7d331949": [
+      3,
+      0
+    ],
+    "57d0f494": [
+      30
     ],
     "fa8890e6": [
       3,
@@ -242,6 +256,17 @@
     ],
     "14514b7e": [
       35
+    ],
+    "84c26f1a": [
+      3,
+      0
+    ],
+    "1817d1c8": [
+      3,
+      0
+    ],
+    "1583fb88": [
+      30
     ],
     "66dff51c": [
       3,
@@ -879,6 +904,26 @@
       3,
       0
     ],
+    "e0c7421a": [
+      3,
+      0
+    ],
+    "781ca8f1": [
+      3,
+      0
+    ],
+    "49c31d7f": [
+      3,
+      0
+    ],
+    "331b7c8b": [
+      3,
+      0
+    ],
+    "2d0abcc6": [
+      3,
+      0
+    ],
     "bb5d03e6": [
       3,
       0
@@ -1331,6 +1376,26 @@
       3,
       0
     ],
+    "0a97275a": [
+      3,
+      0
+    ],
+    "553c9d8c": [
+      3,
+      0
+    ],
+    "fc0c4714": [
+      3,
+      0
+    ],
+    "0ed937e3": [
+      3,
+      0
+    ],
+    "0b252c84": [
+      3,
+      0
+    ],
     "56fdccca": [
       3,
       0
@@ -1446,6 +1511,38 @@
       3,
       0
     ],
+    "de7c8850": [
+      3,
+      0
+    ],
+    "3a1f5b2d": [
+      3,
+      0
+    ],
+    "0df98860": [
+      3,
+      0
+    ],
+    "2418c386": [
+      3,
+      0
+    ],
+    "34d95a4b": [
+      3,
+      0
+    ],
+    "86a15366": [
+      3,
+      0
+    ],
+    "0a7712d1": [
+      3,
+      0
+    ],
+    "718d1233": [
+      3,
+      0
+    ],
     "25bac54c": [
       3,
       0
@@ -1542,6 +1639,30 @@
       3,
       0
     ],
+    "0a1e26ae": [
+      3,
+      0
+    ],
+    "ed5f454a": [
+      3,
+      0
+    ],
+    "bb569ec2": [
+      3,
+      0
+    ],
+    "7d2533dd": [
+      3,
+      0
+    ],
+    "7f5032ba": [
+      3,
+      0
+    ],
+    "0565be22": [
+      3,
+      0
+    ],
     "36b1cf91": [
       3,
       0
@@ -1611,6 +1732,18 @@
       0
     ],
     "5bf175ae": [
+      3,
+      0
+    ],
+    "ef9446fe": [
+      3,
+      0
+    ],
+    "8aad3b14": [
+      3,
+      0
+    ],
+    "3d4acce5": [
       3,
       0
     ],

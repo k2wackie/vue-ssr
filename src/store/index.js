@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import modules from "./modules";
 
 Vue.use(Vuex);
 
@@ -65,7 +66,7 @@ export function createStore() {
     },
     mutations: {},
     actions: {},
-    modules: {},
+    modules,
   });
   return store;
 }
