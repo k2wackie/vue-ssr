@@ -1,11 +1,20 @@
 <template>
   <v-form @submit.prevent="save" ref="form" v-model="valid" lazy-validation>
+    <input-duplicate-check
+      v-model="form.mb_id"
+      label="아이디"
+      counter="30"
+      :rules="rules.id()"
+    />
     <v-btn type="submit" block color="primary">회원가입</v-btn>
   </v-form>
 </template>
 
 <script>
+import validateRules from "../../../util/validateRules";
+import InputDuplicateCheck from "../InputForms/InputDuplicateCheck.vue";
 export default {
+  components: { InputDuplicateCheck },
   name: "SignUpForm",
   data() {
     return {
@@ -24,8 +33,15 @@ export default {
       },
     };
   },
+  computed: {
+    rules: () => validateRules,
+  },
   methods: {
-    save() {
+    async save() {
+      // console.log(this.form);
+      this.$refs.form.validate();
+      await this.$nextTick();
+      if (!this.valid) return;
       console.log(this.form);
     },
   },

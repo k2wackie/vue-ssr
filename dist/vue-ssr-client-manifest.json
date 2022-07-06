@@ -31,22 +31,22 @@
     "fonts/Roboto-Regular.475ba9e4.woff2",
     "fonts/Roboto-Light.0e01b6cd.woff2",
     "fonts/Roboto-Thin.f7a95c9c.woff2",
-    "js/main.1346a1ab.js",
-    "js/manifest.fc189092.js",
-    "js/join.64ff5106.js",
+    "js/main.52ee7a3a.js",
+    "js/manifest.1fe8b3b1.js",
+    "js/join.8f5cb3db.js",
     "favicon.ico",
     "js/about.325a72b5.js",
     "js/error.e0f3dc98.js",
     "js/login.d255c934.js"
   ],
   "initial": [
-    "js/manifest.fc189092.js",
+    "js/manifest.1fe8b3b1.js",
     "css/vendor.8c9a3786.css",
     "js/vendor.2da4b5c7.js",
-    "js/main.1346a1ab.js"
+    "js/main.52ee7a3a.js"
   ],
   "async": [
-    "js/join.64ff5106.js",
+    "js/join.8f5cb3db.js",
     "js/about.325a72b5.js",
     "js/error.e0f3dc98.js",
     "js/login.d255c934.js"
@@ -1513,6 +1513,9 @@
     "5bf175ae": [
       3,
       0
+    ],
+    "e41d5618": [
+      32
     ],
     "2363dafc": [
       3,
