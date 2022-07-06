@@ -10,7 +10,7 @@ const memberModel = {
     ]);
     // console.log(sql);
     const [[row]] = await db.execute(sql.query, sql.values);
-    // console.log(row);
+    console.log(row);
     return row;
   },
 };
