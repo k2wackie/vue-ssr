@@ -15,6 +15,18 @@
       prepend-icon="mdi-card-account-details-outline"
       :rules="rules.name()"
     />
+    <input-password
+      label="비밀번호"
+      v-model="form.mb_password"
+      prepend-icon="mdi-lock"
+      :rules="rules.password()"
+    />
+    <input-password
+      label="비밀번호 확인"
+      v-model="confirmPw"
+      prepend-icon="mdi-lock"
+      :rules="[rules.matchValue(form.mb_password)]"
+    />
     <input-duplicate-check
       ref="email"
       v-model="form.mb_email"
@@ -30,8 +42,10 @@
 <script>
 import validateRules from "../../../util/validateRules";
 import InputDuplicateCheck from "../InputForms/InputDuplicateCheck.vue";
+import InputPassword from "../InputForms/InputPassword.vue";
+
 export default {
-  components: { InputDuplicateCheck },
+  components: { InputDuplicateCheck, InputPassword },
   name: "SignUpForm",
   props: {
     cbCheckId: {
@@ -58,6 +72,7 @@ export default {
         mb_addr1: "",
         mb_addr2: "",
       },
+      confirmPw: "",
     };
   },
   computed: {
