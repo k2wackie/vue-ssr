@@ -3,6 +3,8 @@ import App from "./App.vue";
 import { createRouter } from "./router";
 import { createStore } from "./store";
 import { sync } from "vuex-router-sync";
+
+import "./plugins/axios";
 import vuetify from "./plugins/vuetify";
 import "@babel/polyfill";
 import "roboto-fontface/css/roboto/roboto-fontface.css";
