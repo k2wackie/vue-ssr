@@ -5,7 +5,12 @@
         <v-toolbar-title>회원가입</v-toolbar-title>
       </v-toolbar>
       <v-card-text>
-        <sign-up-form :cbCheckId="checkId" :cbCheckEmail="checkEmail" />
+        <sign-up-form
+          :cbCheckId="checkId"
+          :cbCheckEmail="checkEmail"
+          @onSave="save"
+          :isLoading="isLoading"
+        />
       </v-card-text>
     </v-card>
   </div>
@@ -17,8 +22,13 @@ import SignUpForm from "../../components/auth/SignUpForm.vue";
 export default {
   components: { SignUpForm },
   name: "Join",
+  data() {
+    return {
+      isLoading: false,
+    };
+  },
   methods: {
-    ...mapActions("user", ["duplicateCheck"]),
+    ...mapActions("user", ["duplicateCheck", "createMember"]),
     async checkId(id) {
       // console.log(id);
       const data = await this.duplicateCheck({ field: "mb_id", value: id });
@@ -30,6 +40,12 @@ export default {
         value: email,
       });
       return data;
+    },
+    async save(form) {
+      this.isLoading = true;
+      // console.log("save", form);
+      this.createMember(form);
+      this.isLoading = false;
     },
   },
 };
