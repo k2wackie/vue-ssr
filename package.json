@@ -42,7 +42,7 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.2",
     "cross-env": "^7.0.3",
     "rimraf": "^3.0.2",
     "vue-cli-plugin-axios": "~0.0.4",
