@@ -48,11 +48,13 @@ const cilentConfig = {
   ],
 };
 
-// console.log(process.env);
 module.exports = {
   devServer: {
     proxy: {
       "/api": {
+        target: `http://localhost:${process.env.VUE_APP_SERVER_PORT}`,
+      },
+      "/upload": {
         target: `http://localhost:${process.env.VUE_APP_SERVER_PORT}`,
       },
     },

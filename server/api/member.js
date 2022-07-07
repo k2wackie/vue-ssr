@@ -7,7 +7,7 @@ const jwt = require("../plugins/jwt");
 // /api/member/duplicateCheck/mb_id/abcd
 // MVC
 router.get("/duplicateCheck/:field/:value", async (req, res) => {
-  // console.log(req.params);
+  console.log(req.params);
   const result = await modelCall(memberModel.duplicateCheck, req.params);
   res.json(result);
 });
