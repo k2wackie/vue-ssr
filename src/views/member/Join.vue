@@ -44,8 +44,12 @@ export default {
     async save(form) {
       this.isLoading = true;
       // console.log("save", form);
-      this.createMember(form);
+      const data = await this.createMember(form);
       this.isLoading = false;
+      if (data) {
+        this.$toast.info(`${form.mb_name}님 회원 가입하셨습니다.`);
+        this.$router.push("/login");
+      }
     },
   },
 };

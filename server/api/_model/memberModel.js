@@ -1,4 +1,5 @@
 const db = require("../../plugins/mysql");
+const jwt = require("../../plugins/jwt");
 const sqlHelper = require("../../../util/sqlHelper");
 const TABLE = require("../../../util/TABLE");
 const { LV } = require("../../../util/level");
@@ -38,9 +39,14 @@ const memberModel = {
       mb_update_at: at,
       mb_update_ip: ip,
     };
+    // 비밀번호 암호화
+    payload.mb_password = jwt.generatePassword(payload.mb_password);
+
     const sql = sqlHelper.Insert(TABLE.MEMBER, payload);
     // console.log(sql);
-    return req.body;
+    const [row] = await db.execute(sql.query, sql.values);
+    // console.log(row);
+    return row.affectedRows == 1;
   },
 };
 

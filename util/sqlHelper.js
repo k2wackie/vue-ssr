@@ -19,6 +19,19 @@ const sqlHelper = {
 
     return { query, values };
   },
+  Insert(table, data) {
+    // INSERT INTO table (...) VALUES (...)
+    let query = `INSERT INTO ${table} ({1}) VALUES ({2})`;
+    const fields = Object.keys(data);
+    const prepare = new Array(fields.length).fill("?").join(", ");
+    const values = [];
+    for (const key of fields) {
+      values.push(data[key]);
+    }
+    query = query.replace("{1}", fields.join(", "));
+    query = query.replace("{2}", prepare);
+    return { query, values };
+  },
 };
 
 module.exports = sqlHelper;

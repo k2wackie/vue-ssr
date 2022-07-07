@@ -14,6 +14,9 @@ const webServer = http.createServer(app);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// const jwt = require("./plugins/jwt");
+// console.log(jwt.getRandToken());
+
 // 정적 폴더
 app.use(express.static(path.join(__dirname, "../dist")));
 
