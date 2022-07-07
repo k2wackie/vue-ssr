@@ -54,6 +54,12 @@
       prepend-icon="mdi-phone"
       :rules="rules.phone()"
     />
+    <input-post
+      :zipcode.sync="form.mb_zip"
+      :addr1.sync="form.mb_addr1"
+      :addr2.sync="form.mb_addr2"
+      :required="false"
+    />
     <v-btn type="submit" block color="primary">회원가입</v-btn>
   </v-form>
 </template>
@@ -64,6 +70,7 @@ import InputDate from "../InputForms/InputDate.vue";
 import InputDuplicateCheck from "../InputForms/InputDuplicateCheck.vue";
 import InputPassword from "../InputForms/InputPassword.vue";
 import InputPhone from "../InputForms/InputPhone.vue";
+import InputPost from "../InputForms/InputPost.vue";
 import InputRadio from "../InputForms/InputRadio.vue";
 
 export default {
@@ -73,6 +80,7 @@ export default {
     InputDate,
     InputRadio,
     InputPhone,
+    InputPost,
   },
   name: "SignUpForm",
   props: {
@@ -105,9 +113,9 @@ export default {
         mb_password: "qwer1234",
         mb_name: "테스트",
         mb_birth: "2000-12-12",
-        mb_gender: "",
+        mb_gender: "M",
         mb_email: "test@test.com",
-        mb_phone: "",
+        mb_phone: "010-1111-1111",
         mb_zip: "",
         mb_addr1: "",
         mb_addr2: "",
