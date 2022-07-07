@@ -2,7 +2,6 @@ require("dotenv").config();
 const express = require("express");
 const http = require("http");
 const path = require("path");
-// const db = require("./plugin/mysql");
 const fs = require("fs");
 
 // 앱 초기화
@@ -13,6 +12,14 @@ const webServer = http.createServer(app);
 // 파서
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+const fileUpload = require("express-fileupload");
+app.use(fileUpload());
+const cookieParser = require("cookie-parser");
+app.use(cookieParser());
+
+// 글로벌 세팅
+global.MEMBER_PHOTO_PATH = path.join(__dirname, "./upload/memberPhoto");
+fs.mkdirSync(MEMBER_PHOTO_PATH, { recursive: true });
 
 // Passport
 const passport = require("./plugins/passport");

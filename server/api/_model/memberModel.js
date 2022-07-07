@@ -40,7 +40,8 @@ const memberModel = {
     return row;
   },
   async createMember(req) {
-    console.log("createMember", req.body);
+    console.log("body", req.body);
+    console.log("file", req.files);
 
     const at = moment().format("LT");
     const ip = getIp(req);
@@ -55,6 +56,20 @@ const memberModel = {
       mb_update_at: at,
       mb_update_ip: ip,
     };
+
+    // 이미지 업로드 처리
+    delete payload.mb_image;
+    if (req.files && req.files.mb_image) {
+      req.files.mb_image.mv(
+        `${MEMBER_PHOTO_PATH}/${payload.mb_id}.jpg`,
+        (err) => {
+          if (err) {
+            console.log("Member Image Upload Error", err);
+          }
+        }
+      );
+    }
+
     // 비밀번호 암호화
     payload.mb_password = jwt.generatePassword(payload.mb_password);
 
