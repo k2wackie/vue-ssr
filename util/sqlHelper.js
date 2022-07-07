@@ -5,8 +5,8 @@ const sqlHelper = {
     const values = [];
 
     if (data) {
-      const fields = Object.keys(data);
-      for (const key of fields) {
+      const keys = Object.keys(data);
+      for (const key of keys) {
         where.push(`${key}=?`);
         values.push(data[key]);
       }
@@ -22,14 +22,34 @@ const sqlHelper = {
   Insert(table, data) {
     // INSERT INTO table (...) VALUES (...)
     let query = `INSERT INTO ${table} ({1}) VALUES ({2})`;
-    const fields = Object.keys(data);
-    const prepare = new Array(fields.length).fill("?").join(", ");
+    const keys = Object.keys(data);
+    const prepare = new Array(keys.length).fill("?").join(", ");
     const values = [];
-    for (const key of fields) {
+    for (const key of keys) {
       values.push(data[key]);
     }
-    query = query.replace("{1}", fields.join(", "));
+    query = query.replace("{1}", keys.join(", "));
     query = query.replace("{2}", prepare);
+    return { query, values };
+  },
+  Update(table, data, where) {
+    let query = `UPDATE ${table} SET {1} WHERE {2}`;
+    const keys1 = Object.keys(data);
+    const sets = [];
+    const values = [];
+    for (const key of keys1) {
+      sets.push(`${key}=?`);
+      values.push(data[key]);
+    }
+    query = query.replace("{1}", sets.join(", "));
+
+    const keys2 = Object.keys(where);
+    const wheres = [];
+    for (const key of keys2) {
+      wheres.push(`${key}=?`);
+      values.push(where[key]);
+    }
+    query = query.replace("{2}", wheres.join(" AND "));
     return { query, values };
   },
 };
